@@ -2,7 +2,7 @@
     font-family: 'AcuminFont';
     src: url('../fonts/AcuminPro-Regular.eot'); /* IE9 Compat Modes */
     src: url('../fonts/Acumin-RPro.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/Acumin-RPro.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
   
 }
   
@@ -10,10 +10,6 @@ body {
     font-family: 'AcuminFont', Arial, Helvetica, sans-serif;
     overflow-x: hidden;
     width: 100%;
-}
-
-nnj-b {
-    font-weight: 800
 }
 
 .nnj-main-container {
@@ -126,11 +122,6 @@ nnj-b {
     display: none;
 }
 
-#nnj-navbar .sticky-logo-tablet {
-    display: none;
-    height: 50px;
-}
-
 #nnj-navbar.sticky .logo {
     display: none;
 }
@@ -139,27 +130,6 @@ nnj-b {
     display: block;
 }
 
-#nnj-navbar.sticky .sticky-logo-tablet {
-    display: none;
-}
-
-@media screen and (max-width:1279px) {
-    #nnj-navbar .navbar-header {
-        left: 20px;
-    }
-
-    #nnj-navbar .navbar-header .logo {
-        width: 100px;        
-    }
-
-    #nnj-navbar.sticky .sticky-logo {
-        display: none;
-    }
-
-    #nnj-navbar.sticky .sticky-logo-tablet {
-        display: block;
-    }
-}
 
 /* navbar styles end */
 
@@ -168,13 +138,6 @@ nnj-b {
     position: relative;   
     z-index: 9;
     height: 715px;
-}
-
-#nnj-header .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
 }
 
 #nnj-header .header-bg {
@@ -186,6 +149,7 @@ nnj-b {
 }
 
 #nnj-header .header-content {
+    margin-top: 258px;    
 }
 
 #nnj-header h2.title {
@@ -206,17 +170,6 @@ nnj-b {
     bottom: 80px;
 }
 
-#nnj-header .btn-download {
-    background: #e70010;
-    border:1px solid #e70010;
-    color: #fff;
-    line-height: 18px;
-    padding: 9px 18px;
-    font-size: 12px;
-    text-transform: uppercase;
-    border-radius: 20px;
-    margin-top: 25px;
-}
 
 #nnj-header .social-container {
     position: absolute;
@@ -252,7 +205,7 @@ nnj-b {
 
 @media screen and (max-width:1500px) {
     #nnj-header .header-bg {
-        width: 1200px;
+        width: 1115px;
         height: auto;
         left: 325px;
     }
@@ -265,7 +218,6 @@ nnj-b {
 @media screen and (max-width: 1439px) {
     #nnj-header .header-bg {     
         left: 180px;
-        width: 1300px;
     }
 
     #nnj-header .header-content {
@@ -285,10 +237,6 @@ nnj-b {
     #nnj-header .notebook{
         right: 10%;
         bottom: 141px;
-    }
-
-    #nnj-header .social-container {
-        left: 30px;
     }
     
 }
@@ -322,7 +270,7 @@ nnj-b {
 
 #section1 .title {
     font-size: 41px;
-    font-weight: 800;
+    font-weight: bold;
     color: #fff;
     margin-top: 112px;
     margin-bottom: 30px;
@@ -387,7 +335,6 @@ nnj-b {
 #section2 {
     position: relative;
     margin-top: -342px;
-    overflow-x: hidden;
 }
 
 #section2 .title {
@@ -435,8 +382,6 @@ nnj-b {
     position: relative;
     height: 1299px;
     margin-top: -395px;
-    display: block;
-    overflow: hidden;
 }
 
 #section3 .bg {
@@ -505,7 +450,6 @@ nnj-b {
     position: relative;
     margin-top: -393px;
     height: 1386px;
-    overflow-x: hidden;
 }
 
 #section4 .bg {
@@ -650,8 +594,6 @@ nnj-b {
     height: 900px;
     padding-top: 110px;
     margin-top: -320px;
-    overflow: hidden;
-    display: block;
 }
 
 #section5 .bg {
@@ -664,7 +606,7 @@ nnj-b {
 #section5 .title {
     font-size: 41px;
     color: #202934;
-    font-weight: 800;
+    font-weight: bold;
     margin-bottom: 70px;
 }
 
@@ -686,8 +628,6 @@ nnj-b {
     position: relative;
     margin-top: -400px;
     height: 1230px;
-    overflow: hidden;
-    display: block;
 }
 
 #section6 .bg {
@@ -705,7 +645,7 @@ nnj-b {
 #section6 .title {
     font-size: 41px;
     color: #fff;
-    font-weight: 800;    
+    font-weight: bold;    
 }
 
 #section6 .description {
@@ -724,7 +664,7 @@ nnj-b {
     text-align: center;    
     color: #fff;
     margin: 30px 0 0 0;
-    font-weight: 800;
+    font-weight: bold;
 }
 
 #section6 .avatar-job {
@@ -772,7 +712,6 @@ nnj-b {
     width: 100%;
     background: #fff;
     padding-bottom: 136px;
-    display: block;
 }
 
 #contactus .container {
@@ -782,7 +721,7 @@ nnj-b {
 #contactus .title {
     font-size: 41px;
     color: #202934;
-    font-weight: 800;
+    font-weight: bold;
     margin: 110px 0 50px;
 }
 
@@ -809,7 +748,7 @@ nnj-b {
     border: 1px solid #202934;
     background: #202934;
     color: #fff;
-    font-weight: 800;
+    font-weight: bold;
     font-size: 18px;
     font-style: normal;
     margin: 0 auto;

@@ -37,7 +37,6 @@
 								<a href="#" class="navbar-brand">
 									<img class="logo" src="./assets/images/logo.png" alt="NetNinJa logo">
 									<img class="sticky-logo" src="./assets/images/logo-sticky.png" alt="NetNinJa sticky logo">
-									<img class="sticky-logo-tablet" src="./assets/images/favicon.png" alt="NetNinJa Mobile">
 								</a>
 						</div>
 		
@@ -48,22 +47,25 @@
 								<!-- Navbar Menu -->
 								<ul class="nav navbar-nav navbar-right">
 										<li>
-											<a href="#" page-to="section1-content">Our Mission</a>
+											<a href="#" page-to="section1">Our Mission</a>
 										</li>
 										<!-- <li>
 											<a href="#">What We Do</a>
 										</li> -->
 										<li>
-											<a href="#" page-to="section2">Rent your<br>device</a>
+											<a href="#" page-to="section1">Rent your<br>device</a>
 										</li>
 										<li>
 											<a href="#" page-to="section3">Problem<br> Solving</a>
 										</li>
 										<li>
-											<a href="#" page-to="section5-content">why<br>Net Ninjas</a>
+											<a href="#" page-to="section4">why<br>Net Ninjas</a>
 										</li>
 										<li>
-											<a href="#" page-to="section6">our team</a>
+											<a href="#" page-to="section5">our team</a>
+										</li>
+										<li>
+											<a href="#" page-to="section6">partners</a>
 										</li>
 										<li>
 											<a href="#" page-to="contactus">contact us</a>
@@ -81,13 +83,13 @@
 				<div class="social-container">
 					<img class="vertical-line" src="./assets/images/social-bar.png">
 					<div class="social-btn-container">
-						<a href="https://twitter.com/Netninjas2" class="btn-social btn-twitter">
+						<a href="#" class="btn-social btn-twitter">
 							<img src="./assets/images/icon-twitter.png">
 						</a>
-						<a href="https://www.facebook.com/NetNinjas2018/" class="btn-social btn-facebook">
+						<a href="#" class="btn-social btn-twitter">
 							<img src="./assets/images/icon-facebook.png">
 						</a>
-						<a href="https://www.linkedin.com/company/net-ninjas2018/" class="btn-social btn-linked">
+						<a href="#" class="btn-social btn-twitter">
 							<img src="./assets/images/icon-instagram.png">
 						</a>
 					</div>
@@ -96,15 +98,12 @@
 		
 				<div class="container">
 					<div class="header-content">
-						<h2 class="title"><nnj-b>Decentralised<br>cloud services</nnj-b></h2>
+						<h2 class="title"><b>Decentralised<br>cloud services</b></h2>
 						<h2 class="title">AGREGATOR</h2>
 						<p class="description">
 							Utilize your unused phone, home computer, or tablet by <br>
 							participating in Net Ninja's global network. 
 						</p>
-						<button class="btn-download" type="button">
-							Download Our <nnj-b>MarketPlace</nnj-b>
-						</button>
 					</div>				
 				</div>
 			</header>
@@ -112,7 +111,7 @@
 			<section id="section1">
 				<img class="bg" src="./assets/images/OurMission-BackRight.png">			
 				<div class="container">
-					<div id="section1-content" class="row">
+					<div class="row">
 						<div class="col-md-6">
 							<img class="notebook" src="./assets/images/OurMission-Laptop1.png" alt="ourmissio-laptop">
 						</div>
@@ -141,7 +140,7 @@
 					<div class="row">
 						<div class="col-md-6">
 							<h2 class="title">
-								<nnj-b>RENT</nnj-b> YOUR DEVICE<br>
+								<b>RENT</b> YOUR DEVICE<br>
 								WHEN NOT IN USE
 							</h2>
 							<p class="description">
@@ -154,9 +153,9 @@
 						</div>
 						<div class="col-md-6">
 							<h2 class="title title-practice">
-								<nnj-b>Participate in <br>
+								<b>Participate in <br>
 								Research Projects <br>
-								</nnj-b>
+								</b>
 								Which will change <br>
 								the world
 							</h2>
@@ -175,7 +174,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<h2 class="title text-center"><nnj-b>Problem</nnj-b><br>Solving</h2>
+							<h2 class="title text-center"><b>Problem</b><br>Solving</h2>
 						</div>
 					</div>
 					<div class="row">
@@ -279,7 +278,7 @@
 			<section id="section5">
 				<img class="bg bg-desktop" src="./assets/images/section5-bg.png" alt='section5 bg'>
 				<div class="container">
-					<div id="section5-content" class="row">
+					<div class="row">
 						<div class="col-md-12">
 							<h2 class="title text-center">WHY NET NINJAS?</h2>
 						</div>
@@ -431,7 +430,7 @@
 
 			$('#nnj-navbar .navbar-nav>li>a').on('click', function(){
 				var gotoPage = $(this).attr('page-to');
-				$("html, body").animate({ scrollTop: $('#'+gotoPage).offset().top - 100 }, 500);
+				$("html, body").animate({ scrollTop: $('#'+gotoPage).offset().top }, 500);
 				return false;
 			})
 
