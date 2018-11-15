@@ -37,6 +37,7 @@
 								<a href="#" class="navbar-brand">
 									<img class="logo" src="./assets/images/logo.png" alt="NetNinJa logo">
 									<img class="sticky-logo" src="./assets/images/logo-sticky.png" alt="NetNinJa sticky logo">
+									<img class="sticky-logo-tablet" src="./assets/images/favicon.png" alt="NetNinJa Mobile">
 								</a>
 						</div>
 		
@@ -47,25 +48,22 @@
 								<!-- Navbar Menu -->
 								<ul class="nav navbar-nav navbar-right">
 										<li>
-											<a href="#" page-to="section1">Our Mission</a>
+											<a href="#" page-to="section1-content">Our Mission</a>
 										</li>
 										<!-- <li>
 											<a href="#">What We Do</a>
 										</li> -->
 										<li>
-											<a href="#" page-to="section1">Rent your<br>device</a>
+											<a href="#" page-to="section2">Rent your<br>device</a>
 										</li>
 										<li>
 											<a href="#" page-to="section3">Problem<br> Solving</a>
 										</li>
 										<li>
-											<a href="#" page-to="section4">why<br>Net Ninjas</a>
+											<a href="#" page-to="section5-content">why<br>Net Ninjas</a>
 										</li>
 										<li>
-											<a href="#" page-to="section5">our team</a>
-										</li>
-										<li>
-											<a href="#" page-to="section6">partners</a>
+											<a href="#" page-to="section6">our team</a>
 										</li>
 										<li>
 											<a href="#" page-to="contactus">contact us</a>
@@ -78,51 +76,66 @@
 	
 			<header id="nnj-header">
 				<img class="header-bg" src="./assets/images/header-bg.png" alt="header background" />						
+				<img class="header-bg-mobile" src="./assets/images/header-bg-mobile.png" alt="header background mobile">
 				<img class="notebook" src="./assets/images/header-notebook.png">
 
 				<div class="social-container">
 					<img class="vertical-line" src="./assets/images/social-bar.png">
 					<div class="social-btn-container">
-						<a href="#" class="btn-social btn-twitter">
-							<img src="./assets/images/icon-twitter.png">
+						<a href="https://twitter.com/Netninjas2" class="btn-social btn-twitter" target="_blank">
 						</a>
-						<a href="#" class="btn-social btn-twitter">
-							<img src="./assets/images/icon-facebook.png">
+						<a href="https://www.facebook.com/NetNinjas2018/" class="btn-social btn-facebook" target="_blank">
 						</a>
-						<a href="#" class="btn-social btn-twitter">
-							<img src="./assets/images/icon-instagram.png">
+						<a href="https://www.linkedin.com/company/net-ninjas2018/" class="btn-social btn-linked" target="_blank">
 						</a>
 					</div>
 					<p class="social-text text-uppercase">social media</p>
 				</div>
 		
 				<div class="container">
-					<div class="header-content">
-						<h2 class="title"><b>Decentralised<br>cloud services</b></h2>
-						<h2 class="title">AGREGATOR</h2>
+					<div class="header-content nnj-desktop-show">
+						<h2 class="title"><nnj-b style="color: #ff0010">DECENTRALIZED</nnj-b><br><nnj-b>cloud services</nnj-b></h2>
+						<h2 class="title">Aggregator</h2>
 						<p class="description">
 							Utilize your unused phone, home computer, or tablet by <br>
 							participating in Net Ninja's global network. 
 						</p>
-					</div>				
+						<button class="btn-download" type="button">
+							Download Our <nnj-b>MarketPlace</nnj-b>
+						</button>
+					</div>
+					<div class="header-content nnj-mobile-show">
+						<h2 class="title"><nnj-b style="color: #212934">DECENTRALIZED</nnj-b><br><nnj-b>cloud services</nnj-b></h2>
+						<h2 class="title">Aggregator</h2>
+						<p class="description">
+							Utilize your unused phone, home computer, or tablet by <br>
+							participating in Net Ninja's global network. 
+						</p>
+						<button class="btn-download" type="button">
+							Download Our <nnj-b>MarketPlace</nnj-b>
+						</button>
+					</div>
 				</div>
+				<svg class="bottom-triangle nnj-mobile-show" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<polygon fill="white" points="0,100 100,0 100,100"/>
+				</svg>			
 			</header>
 	
 			<section id="section1">
 				<img class="bg" src="./assets/images/OurMission-BackRight.png">			
 				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
+					<div id="section1-content" class="row">
+						<div class="col-md-6 col-sm-6">
 							<img class="notebook" src="./assets/images/OurMission-Laptop1.png" alt="ourmissio-laptop">
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 col-sm-6">
 							<h2 class="title">our mission</h2>
 							<p class="description">
-								Net Ninjas’ platform will help reduce the global electricity consumtion<br>
-								by supporting decentralized infrastructure. We aim to provide safe,<br>
-								transparent, and accessible tools for renting your personal device<br>
-								(phone, CPU, hard drive, GPU…) to our global network of partners.<br> 
-								A portion of the profits will be used to support subsidized<br> 
+								Net Ninjas’ platform will help reduce the global electricity consumtion
+								by supporting decentralized infrastructure. We aim to provide safe,
+								transparent, and accessible tools for renting your personal device
+								(phone, CPU, hard drive, GPU…) to our global network of partners.<br>
+								A portion of the profits will be used to support subsidized
 								infrastructure for social impact and human rights projects.
 							</p>
 						</div>
@@ -136,11 +149,15 @@
 			</section>
 	
 			<section id="section2">
+				<svg class="top-triangle nnj-mobile-show" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<polygon fill="white" points="0,0 100,0 0,100"/>
+				</svg>
+				<img class="bg" src="./assets/images/OurMission-BackLeft.png">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-6 col-sm-6">
 							<h2 class="title">
-								<b>RENT</b> YOUR DEVICE<br>
+								<nnj-b>RENT</nnj-b> YOUR DEVICE<br>
 								WHEN NOT IN USE
 							</h2>
 							<p class="description">
@@ -149,13 +166,12 @@
 								application, you can choose from a variety of tokens or projects to monetize your
 								device the way YOU want.
 							</p>
-							<img class="bg" src="./assets/images/OurMission-BackLeft.png">
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 col-sm-6">
 							<h2 class="title title-practice">
-								<b>Participate in <br>
+								<nnj-b>Participate in <br>
 								Research Projects <br>
-								</b>
+								</nnj-b>
 								Which will change <br>
 								the world
 							</h2>
@@ -167,6 +183,9 @@
 						</div>
 					</div>
 				</div>
+				<svg class="bottom-triangle nnj-mobile-show" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<polygon fill="white" points="0,100 100,0 100,100"/>
+				</svg>
 			</section>
 	
 			<section id="section3">
@@ -174,24 +193,27 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<h2 class="title text-center"><b>Problem</b><br>Solving</h2>
+							<h2 class="title text-center"><nnj-b>Problem</nnj-b><br>Solving</h2>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-4 text-center">
-							<img src="./assets/images/Problem-Img1.png">
+						<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+							<img class="nnj-desktop-show" src="./assets/images/Problem-Img1.png">
+							<img class="nnj-mobile-show" src="./assets/images/Problem-Img1-mobile.png">
 							<p class="description">
 								Our personal devices are left unused a majority of the day
 							</p>
 						</div>
-						<div class="col-md-4 text-center">
-							<img src="./assets/images/Problem-Img2.png">
+						<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+								<img class="nnj-desktop-show" src="./assets/images/Problem-Img2.png">
+								<img class="nnj-mobile-show" src="./assets/images/Problem-Img2-mobile.png">
 							<p class="description">
 									People want to donate but do not have the funds available or know how to make an impact 
 							</p>
 						</div>
-						<div class="col-md-4 text-center">
-							<img src="./assets/images/Problem-Img3.png">
+						<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+								<img class="nnj-desktop-show" src="./assets/images/Problem-Img3.png">
+								<img class="nnj-mobile-show" src="./assets/images/Problem-Img3-mobile.png">
 							<p class="description">
 								Data centers will account for 20% of global electricity 
 								consumption by 2025
@@ -199,31 +221,37 @@
 						</div>
 					</div>
 					<div class="row arrow-row">
-						<div class="col-md-4 text-center">
-							<img src="./assets/images/Problem-Arrow.png">
+							<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+							<img class="nnj-desktop-show" src="./assets/images/Problem-Arrow.png">
+							<img class="nnj-mobile-show" src="./assets/images/Problem-Arrow-mobile.png">
 						</div>
-						<div class="col-md-4 text-center">
-							<img src="./assets/images/Problem-Arrow.png">
+						<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+							<img class="nnj-desktop-show" src="./assets/images/Problem-Arrow.png">
+							<img class="nnj-mobile-show" src="./assets/images/Problem-Arrow-mobile.png">
 						</div>
-						<div class="col-md-4 text-center">
-							<img src="./assets/images/Problem-Arrow.png">
+						<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+							<img class="nnj-desktop-show" src="./assets/images/Problem-Arrow.png">
+							<img class="nnj-mobile-show" src="./assets/images/Problem-Arrow-mobile.png">
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-4 text-center">
-							<img src="./assets/images/Problem-Img4.png">
+						<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+							<img class="nnj-desktop-show" src="./assets/images/Problem-Img4.png">
+							<img class="nnj-mobile-show" src="./assets/images/Problem-Img4-mobile.png">
 							<p class="description">
 								Utilize your device for research projects or to earn profits
 							</p>
 						</div>
-						<div class="col-md-4 text-center">
-							<img src="./assets/images/Problem-Img5.png">
+						<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+							<img class="nnj-desktop-show" src="./assets/images/Problem-Img5.png">
+							<img class="nnj-mobile-show" src="./assets/images/Problem-Img5-mobile.png">
 							<p class="description">
 								Choose from a list of non-profits you would like to support and rent your device quickly and easily
 							</p>
 						</div>
-						<div class="col-md-4 text-center">
-							<img src="./assets/images/Problem-Img6.png">
+						<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+								<img class="nnj-desktop-show" src="./assets/images/Problem-Img6.png">
+								<img class="nnj-mobile-show" src="./assets/images/Problem-Img6-mobile.png">
 							<p class="description">
 								Save electricity by using your energy efficient devices as 
 								opposed to large data centers
@@ -234,13 +262,16 @@
 			</section>
 	
 			<section id="section4">
+				<svg class="top-triangle nnj-mobile-show" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<polygon fill="white" points="0,0 100,0 0,100"/>
+				</svg>
 				<img class="bg" src="./assets/images/Reducing-Back.png" alt="reducing background">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-6 col-sm-6">
 							<img class="notebook" src="./assets/images/Reducing-Computer.png">
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 col-sm-6">
 							<div class="row">
 								<div class="col-md-12">
 									<h2 class="title">
@@ -253,58 +284,49 @@
 							</div>						
 							<div class="row">
 								<div class="col-md-12 text-center">
-									<!-- <p class="description txt-enterprise text-center">
-										<b>Enterprise<br>customers</b>
-									</p> -->
 									<div class="triangle-container text-center">
 										<img class="triangle" src="./assets/images/Reducing-Triangle.png">
-										<!-- <p class="description text-center text-uppercase">Net<br>ninjas</p> -->
 									</div>
 								</div>
 							</div>
-							<!-- <div class="row">
-								<div class="col-xs-6">
-									<p class="description bottom-description text-center">Decentralised<br>services</p>
-								</div>
-								<div class="col-xs-6">
-									<p class="description bottom-description text-center">Device<br>providers</p>
-								</div>
-							</div> -->
 						</div>
 					</div>				
 				</div>
+				<svg class="bottom-triangle nnj-mobile-show" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<polygon fill="white" points="0,100 100,0 100,100"/>
+				</svg>
 			</section>
 	
 			<section id="section5">
 				<img class="bg bg-desktop" src="./assets/images/section5-bg.png" alt='section5 bg'>
 				<div class="container">
-					<div class="row">
+					<div id="section5-content" class="row">
 						<div class="col-md-12">
 							<h2 class="title text-center">WHY NET NINJAS?</h2>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-4 text-center">
+						<div class="col-md-4 col-sm-4 text-center">
 							<img src="./assets/images/WhyNetNinja-Cloud.png" alt="section5 img1">
 							<p class="description">
-									Interoperability between different <br>
-									decentralized applications allowing<br>
-									access through a service and<br>
+									Interoperability between different
+									decentralized applications allowing
+									access through a service and
 									platform agnostic API
 							</p>
 						</div>
-						<div class="col-md-4 text-center">
+						<div class="col-md-4 col-sm-4 text-center">
 							<img src="./assets/images/WhyNetNinja-Idea.png" alt="section5 img1">						
 							<p class="description">
-								Pay-as-you go for the exact amount<br>
-								of services rendered with<br>
-								little to no fees<br>
+								Pay-as-you go for the exact amount
+								of services rendered with
+								little to no fees
 							</p>
 						</div>
-						<div class="col-md-4 text-center">
+						<div class="col-md-4 col-sm-4 text-center">
 							<img src="./assets/images/WhyNetNinja-Currency.png" alt="section5 img1">
 							<p class="description">
-								Provide payments easily with <br>
+								Provide payments easily with
 								cryptocurrency or fiat
 							</p>
 						</div>
@@ -313,13 +335,17 @@
 			</section>
 	
 			<section id="section6">
-				<img class="bg" src="./assets/images/OurTeam-back.png">
+				<svg class="top-triangle nnj-mobile-show" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<polygon fill="white" points="0,0 100,0 0,100"/>
+				</svg>
+				<img class="bg nnj-desktop-show" src="./assets/images/OurTeam-back.png">
+				<img class="bg nnj-mobile-show" src="./assets/images/header-bg-mobile.png">
 				<div class="container">
 					<h2 class="title text-center">OUR TEAM</h2>
 					<p class="description text-center"><i>Meet our team</i></p>
 					<div clsas="row">
-						<div class="col-md-4 text-center">
-							<img class="avatar" src="./assets/images/OurTeam-Rami.png">
+						<div class="col-md-4 col-sm-4 text-center">
+							<img class="avatar" src="./assets/images/rami.png">
 							<h2 class="avatar-title">Rami Hersonsky</h2>
 							<p class="avatar-job"><i>Founder, CEO</i></p>
 							<p class="avatar-description">
@@ -331,8 +357,8 @@
 								Rami was the CTO of Code Gorillaz before starting Netninjas.
 								</p>
 						</div>
-						<div class="col-md-4 text-center">
-							<img class="avatar" src="./assets/images/OurTeam-Ohad.png">
+						<div class="col-md-4 col-sm-4 text-center">
+							<img class="avatar" src="./assets/images/cohen.png">
 							<h2 class="avatar-title">Ohad Cohen</h2>
 							<p class="avatar-job"><i>Co-Founder, CTO</i></p>
 							<p class="avatar-description">
@@ -343,39 +369,42 @@
 								decentralized trust-less Poker game on Ethereum .
 							</p>
 						</div>
-						<div class="col-md-4 text-center">
-							<img class="avatar" src="./assets/images/OurTeam-Issac.png">
+						<div class="col-md-4 col-sm-4 text-center">
+							<img class="avatar" src="./assets/images/isaac.png">
 							<h2 class="avatar-title">Isaac Rodgin</h2>
 							<p class="avatar-job"><i>Co-founder, COO</i></p>
 							<p class="avatar-description">
-									Isaac graduated from IDC, Herzliya, with a degree inBusiness Entrepreneurship and a cluster in
-									Computer Science. He has several years of
-									experience focused on green technology, social
-									enterprises, and fintech startups. In his most recent job at Zen Protocol, he helped facilitate their $30 million crowdsale and presale.
+								Isaac graduated from IDC, Herzliya, with a degree inBusiness Entrepreneurship and a cluster in
+								Computer Science. He has several years of
+								experience focused on green technology, social
+								enterprises, and fintech startups. In his most recent job at Zen Protocol, he helped facilitate their $30 million crowdsale and presale.
 							</p>
 						</div>
 					</div>
 				</div>
+				<svg class="bottom-triangle nnj-mobile-show" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<polygon fill="white" points="0,100 100,0 100,100"/>
+				</svg>
 			</section>
 	
 			<section id="contactus">
 				<div class="container">
 					<h2 class="title text-uppercase text-center">contact us</h2>
-					<form>					
-						<div class="row">
+					<form id="form-mail" action="index.php" method="post" role="form" target="_blank">
+						<div class="row">					
 							<div class="col-md-6">
 								<div class="form-group">
-									<input class="form-control" type="text" placeholder="Name" name="name" required>
+									<input id="form_name" class="form-control" type="text" placeholder="Name" name="name" required>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-									<input class="form-control" type="email" placeholder="E-mail" name="email" required>
+									<input id="form_email" class="form-control" type="email" placeholder="E-mail" name="email" required>
 								</div>
 							</div>											
 							<div class="col-md-12">
 								<div class="form-group">
-									<textarea class="form-control" name="mail-body" placeholder="Your text"></textarea>
+									<textarea id="msg_text" class="form-control" name="mail-body" placeholder="Your text" required></textarea>
 								</div>
 							</div>
 							<div class="col-md-12 text-center">
@@ -430,7 +459,7 @@
 
 			$('#nnj-navbar .navbar-nav>li>a').on('click', function(){
 				var gotoPage = $(this).attr('page-to');
-				$("html, body").animate({ scrollTop: $('#'+gotoPage).offset().top }, 500);
+				$("html, body").animate({ scrollTop: $('#'+gotoPage).offset().top - 100 }, 500);
 				return false;
 			})
 
@@ -438,6 +467,26 @@
 				$("html, body").animate({ scrollTop: 0}, 500);
 				return false;
 			})
+
+			$("#form-mail").submit(function(){
+				// $.post($(this).attr("action"), $(this).serialize());
+				var data = {
+					name: $("#form_name").val(),
+					email: $("#form_email").val(),
+					message: $("#msg_text").val()
+				};
+
+				$.ajax({
+					type: "POST",
+					url: "mail.php",
+					data: data,
+					success: function(){							
+
+					}
+				});
+
+				return false;
+			});						
 		</script>
 						
 	</body>
