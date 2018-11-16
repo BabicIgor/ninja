@@ -810,7 +810,10 @@ nnj-b {
         width: 711px;
         height: 901px;
     }
-    
+
+    #section2 .title {
+        font-size: 30px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -821,7 +824,12 @@ nnj-b {
 
     #section2 .description {
         font-size: 16px;
-    }  
+    }
+    
+    #section2 .title {
+        font-size: 41px;
+    }
+
 }
 
 @media screen and (max-width: 767px) {
